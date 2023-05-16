@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/SampleNotification/SampleNotification.Android/bin/Debug
+/SampleNotification/SampleNotification.Android/obj
+/SampleNotification/SampleNotification.iOS/obj
+/SampleNotification/SampleNotification/bin/Debug/netstandard2.0
+/SampleNotification/SampleNotification/obj

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="dark_blue">#262C68</color>
+  <color name="light_blue">#262C68</color>
+  <color name="accent">#bfd900</color>
+  <color name="background_color">#ffffff</color>
+  <color name="entry_background">#ffffff</color>
+  <color name="entry_border">#000000</color>
+  <color name="button_background">#ffffff</color>
+  <color name="menu">#ffffff</color>
+    
+    <color name="fingerprint_warning">#f4511e</color>
+    <color name="fingerprint_hint">#42000000</color>
+    <color name="fingerprint_success">#009688</color>
+</resources>
