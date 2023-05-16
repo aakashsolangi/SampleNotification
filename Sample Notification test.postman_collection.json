@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "e96193aa-4242-4a14-a3ed-b9aa8b417ca7",
+		"name": "Sample Notification test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2102377"
+	},
+	"item": [
+		{
+			"name": "FCM Message POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAAg0x0sm4:APA91bF5oJuYMjMCM2BEzO3ZQ1dewzTKym4mj8O9Roy2jr6YkYf0qViL9h_V0df3cazLGjEP9x1FXLZNS6Dxora64rf8X0v7fCHFA4xPLd5DCuoknHzjbMKVBAOKytXt4hDRMNT68CIf"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"to\" : \"ex4VqEUwRGycCglRQgwiGN:APA91bE9O1lrSe7EfL5K17FogK_6YpqbO80gBrsDSTGnp1x3Zi6VBtKc0shC1Q0PxYAnnWLPj1oN_QJ_ZjQGBDLGSC11GNedjh6_NVDuA2zuJepb43hh7ZkWeJhdOUdGJ0vmTu10nO8J\",\n\t\"collapse_key\" : \"type_a\",\n\t\"data\" : {\n\t\t\"body\" : \"First Notification\",\n\t\t\"title\": \"App Testing\",\n\t\t\"text\" : \"Is it working\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				},
+				"description": "Send Direct Message to Device with given id. HTTP Request."
+			},
+			"response": []
+		}
+	]
+}
