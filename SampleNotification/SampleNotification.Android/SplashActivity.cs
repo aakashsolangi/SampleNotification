@@ -15,15 +15,20 @@ namespace SampleNotification.Droid
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
         {
             base.OnCreate(savedInstanceState, persistentState);
-            
+            //SetBackgroundExecutionExemption(true);
         }
+
+        //protected override void OnCreate(Bundle savedInstanceState)
+        //{
+        //    base.OnCreate(savedInstanceState);
+        //}
 
         //If we start the app simply this method runs normally 
         //but when Yapped on notification and we try to start activity from notification intent service it did not run
         //Sometime: if no other then this app is opened and app is in back ground the notifiation tapped works and run this activity
         //but if any pther app in opened and this app is in back ground tapped on notifcation did not invoke splas activity
         //Killed mode notfication tapped never works
-        
+
         //I tried to open another activity as well but it did not run for me
         protected override void OnResume()
         {
